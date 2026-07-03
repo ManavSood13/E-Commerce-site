@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment - PetVics</title>
+    <title>Payment - PetCare</title>
     <link rel="stylesheet" href="payment.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1 class="logo">SportsFit</h1>
+            <h1 class="logo">PetCare</h1>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="owner_dashboard.html">Dashboard</a></li>
+                <li><a href="doctor_dashboard.html">Doctor Dashboard</a></li>
+                <li><a href="auth.html">Login / Sign Up</a></li>
             </ul>
         </nav>
     </header>
@@ -42,9 +44,9 @@
     <script>
         document.getElementById("payment-form").addEventListener("submit", function(event) {
             event.preventDefault();
-            document.getElementById("payment-message").textContent = "Payment Successful! Thank you for using SportsFit.";
+            document.getElementById("payment-message").textContent = "Payment Successful! Thank you for using PetCare.";
             setTimeout(() => {
-                window.location.href = "paymentdone.html";
+                window.location.href = "owner_dashboard.html";
             }, 2000);
         });
     </script>
